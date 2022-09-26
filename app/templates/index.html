@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{{ title }}</title>
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='dist/assets/img/MRT_logo.png') }}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='dist/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- 導覽列-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <!-- 按標題回首頁-->
+                <a class="navbar-brand" href="/index">{{ title }}</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/analysis">Analysis</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/model">Prediction</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">About US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主要標題-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">後疫情時代<br>北捷人流的分析與預測</h1>
+                        <a class="btn btn-primary" href="#home">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- 前言-->
+        <section class="about-section text-start" >
+            <div class="container px-5 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-start">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-1" id="home">前言</h2>                        
+                        <p class="text-white-50">
+                            北捷一直是連結大台北生活圈的重要運輸，乘載了北部地區人們的日常，人口的流動與都市區域的特色，蘊藏的密不可分的關連，本組以分析北捷運量，觀察都市行為，也透過關聯進行人流的預測。
+                        </p>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-end">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-1">北捷簡介</h2>                        
+                        <p class="text-white-50">
+                            北捷全名為「臺北都會區大眾捷運系統」，為全台灣第一座捷運系統自民國85年木柵線通車至今，在雙北市民共同忍耐交通的黑暗期下，如今已完成了6條的捷運線路，完整的覆蓋了台北地區的交通圈。
+                        </p>
+                    </div>
+                </div>
+            <div>  
+                    <img  class="img-fluid  justify-content-center" src="{{ url_for('static', filename='dist/assets/img/MRT4.png') }}" alt="..." />
+            </div>
+              
+        </section>
+        
+  
+        <!-- Top15-->
+
+        <div class="flourish-embed flourish-bar-chart-race px-5 py-5" data-src="visualisation/11158600"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
+        <!-- 2022歷史-->
+<section class="projects-section bg-light" id="projects">
+    <div class="container py-3 px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <!-- Tableaua模型 -->
+            <div class="col-xl-8 col-lg-7 "><div class='tableauPlaceholder' id='viz1663766388721' style='position: relative'><noscript><a href='#'><img alt='history ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hi&#47;history_16632328596150&#47;history&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='history_16632328596150&#47;history' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;hi&#47;history_16632328596150&#47;history&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-TW' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1663766388721');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='687px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='687px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-start text-lg-left">
+                    <h4>2022歷史資料</h4>
+                    <p class="text-black-50 mb-0">提供2022/1/1~2022/7/19，各站每日進出站人流量歷史紀錄查詢。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">BDSE26 Team5</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='dist/js/scripts.js') }}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

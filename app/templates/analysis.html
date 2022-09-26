@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='dist/assets/img/MRT_logo.png') }}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='dist/css/styles.css') }}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- 導覽列-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <!-- 按標題回首頁-->
+            <a class="navbar-brand" href="/index">{{ title }}</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/analysis">Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/model">Prediction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 數據探勘-->
+    <section class="signup-section" id="signup">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-start">
+                    <h2 class="text-white mb-3">數據探勘</h2>
+                    <p class="text-white">
+                        本組從政府公開資訊所提供的北捷各站進出量數據統計(4年5個月，共4.8億)，搭配捷運站周邊設施資料、COVID-19重大時點、捷運所在鄰里人口數量、歷年重要節日，組合成資料集，進行資料的挖掘。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="Part1">
+        <div class="container px-4 px-lg-5 px-5">
+            <!-- 各站乘客的去向-->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-start text-lg-left">
+                        <h4>(1)各區乘客的去向</h4>
+                        <p class="text-black-50 mb-0">
+                            我們將捷運站點與雙北的行政區域進行串聯，可觀察出各站上下班時間，乘客下車的地點，進一步掌握到人流的動向，可應用於商業廣告的投放，或是地區活動的客群鎖定。</p>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class='tableauPlaceholder' id='viz1663824971617' style='position: relative'><noscript><a
+                                href='#'><img alt='儀表板窗格 2 '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16630576143460&#47;2&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='_16630576143460&#47;2' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16630576143460&#47;2&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='zh-TW' />
+                            <param name='filter' value='publish=yes' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1663824971617'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- Dashboard-Part2!-->
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="Part3">
+        <!-- 人流與特殊事件-->
+        <div class="container px-4 px-lg-5 px-5">
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+                <div class="col-xl-4 col-lg-5 ">
+                    <div class="featured-text text-start text-lg-left">
+                        <h4>(2)人流與特殊事件的影響</h4>
+                        <p class="text-black-50 mb-0">將特殊節日與疫情政策時間點，轉成One hot
+                            encoding，並搭配捷運人流的資料來看，可以發現除夕，因為大家都回鄉團圓，所以捷運人流明顯下降，另外以疫情的重要時點來看，2021年發布三級警戒，與2022年確診爆發後，捷運人流明顯驟降，
+                            故後續將該feature納入人流預測模型。</p>
+                    </div>
+                </div>
+                <!-- 圖 -->
+                <div class="col-xl-8 col-lg-7">
+
+                    <div class='tableauPlaceholder' id='viz1663825077976' style='position: relative'><noscript><a
+                                href='#'><img alt='儀表板窗格 2 '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16632317873740&#47;2_1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='_16632317873740&#47;2_1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16632317873740&#47;2_1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='zh-TW' />
+                            <param name='filter' value='publish=yes' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1663825077976'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Dashboard-Part3!-->
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="Part3">
+        <!-- 段落 下降率-->
+        <div class="container px-4 px-lg-5 px-5">
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+                <div class="col-xl-4 col-lg-5 ">
+                    <div class="featured-text text-start text-lg-left">
+                        <h3>(3)捷運進出口態樣K-Means分群</h3>
+                        <br>
+                        <h5>K-means分群分析</h5>
+                        <h6>探討台北捷運乘客生活型態及流量在疫情前後的變化，彙整各車站進出入人流數量，預計從資料中探討乘客的生活型態，後續可推廣到捷運站點附近區域的生活型態，將其結果應用於商業企劃 都市規劃
+                            路線增設效益…等使用。</h6>
+                        <br>
+                        <br>
+                        <h6>為了同時觀察到人流的變化，這邊並未將資料做標準化，透過輪廓分析發現因為台北車站歷年人流都是其他站的近兩倍以上，會影響到分群結果，因此將台北車站分出來，再將進出站結果交叉比對後可歸類出該群生活形態。
+                        </h6>
+                    </div>
+                </div>
+                <!-- 圖 -->
+                <div class="col-xl-8 col-lg-7">
+                    <div class='tableauPlaceholder' id='viz1663767410734' style='position: relative'><noscript><a
+                                href='#'><img alt='儀表板窗格 1 '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MR&#47;MRT_16631367777420&#47;1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='MRT_16631367777420&#47;1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MR&#47;MRT_16631367777420&#47;1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='zh-TW' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1663767410734'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 段落 分群TOP10-->
+        <div class="container px-4 px-lg-5 px-5">
+
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+                <div class="col-xl-4 col-lg-5 ">
+                    <div class="featured-text text-start text-lg-left">
+                        <h4>分群型態</h4>
+                        <h6>上班尖峰 上班尖峰+假日 上班尖峰+假日略多 下班尖峰 下班尖峰+假日 下班尖峰+假日略多 上下班尖峰 上下班尖峰+假日 上下班尖峰+假日略多
+                            可從進站搭配出站去了解該站平時是怎樣的型態並探討疫情前後型態是否有影響,以下舉流量前10名為例。</h6>
+                        <br>
+                        <br>
+                        <h6>透過型態比較可看出疫情前後搭乘北捷的乘客型態已有所不同</h6>
+                    </div>
+                </div>
+                <!-- 圖 -->
+                <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0"
+                        src="{{ url_for('static', filename='dist/assets/img/Kmeans1.png') }}" alt="..." /></div>
+
+            </div>
+        </div>
+        <!-- 段落 三類分群-->
+        <div class="container px-4 px-lg-5 px-5">
+
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+                <div class="col-xl-4 col-lg-5 ">
+                    <div class="featured-text text-start text-lg-left">
+                        <h4>疫情後人流模式分群</h4>
+                        <h6>為了探討疫情後台北捷運各站人流活動的模式，利用標準化後的資料進站模式及出站模式各分群，交叉對應後共可分為ABC三類。</h6>
+                        <br>
+                        <br>
+                        <h6></h6>
+                    </div>
+                </div>
+                <!-- 圖 -->
+                <div class="col-lg-6">
+                    <div class='tableauPlaceholder' id='viz1663766908897' style='position: relative'><noscript><a
+                                href='#'><img alt='分群 '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16624707957900&#47;sheet9&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='_16624707957900&#47;sheet9' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16624707957900&#47;sheet9&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='zh-TW' />
+                            <param name='filter' value='publish=yes' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1663766908897'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '287px'; vizElement.style.maxHeight = '487px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '420px'; vizElement.style.maxWidth = '650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '287px'; vizElement.style.maxHeight = '487px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 1.77) + 'px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                </div>
+
+
+                <!-- 段落 分群統整-->
+
+
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+
+                    <div class="col-xl-4 col-lg-5 ">
+                        <div class="featured-text text-start text-lg-left">
+                            <h4>分類總整理</h4>
+                            <br>
+                            <h6>A類:<br>平日上班，假日躺平。</h6>
+                            <h6>B類:<br>上班很累，晚上聚一下。</h6>
+                            <h6>C類:<br>工作休閒兩不誤。</h6>
+                        </div>
+                    </div>
+                    <!-- 圖 -->
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0"
+                            src="{{ url_for('static', filename='dist/assets/img/Group.png') }}" alt="..." /></div>
+
+
+                </div>
+
+    </section>
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">BDSE26 Team5</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename='dist/js/scripts.js') }}"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
